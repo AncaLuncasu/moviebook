@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Moviebook}
+\author{Luncaşu Anca-Maria}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Licenţa mea este repezentată de o aplicaţie ce are ca scop organizarea unei biblioteci personale de filme.
+\end{abstract}
+
+\section{Descriere}
+
+Aplicaţia mea are ca scop crearea unei biblioteci de filme, populată cu informaţii primite de la utilizator cu vedere la filmele văzute, în curs de vizionare şi care trebuie să fie vizionate. În acelaşi timp, se face o "colecţie" din gen-urile filmelor vizionare şi sunt sugerate noi filme utilizatorului.
+
+\section{Structura aplicaţiei}
+
+\subsection{Înregistrarea utilizatorului}
+
+Utilizatorul are nevoie de un cont pentru a fi se salva biblioteca de filme. De aceea înregistrarea este obligatorie. Ea se va face prin completarea câmpurilor cu informaţii de logare şi confirmarea contului.
+
+\subsection{Căutare filme/seriale}
+
+După ce este logat. Utilizatorul poate căuta un film în search-ul prestabilit al aplicaţiei şi, după ce filmul respectiv a fost găsit, utilizatorul poate alege în care din lista bibliotecii sale să-l adauge. ( vizionare / în curs de vizionare / în plan de vizionare ) Dacă filmul căutat este unul de tip serial, atunci aplicaţia va trimite notificare utilizatorului când va apărea un episod nou.
+
+\subsection{Generarea de sugestii}
+
+Sugestiile vor fi generate de aplicaţie astfel încât utilizatorul să poată vedea câte o sugestie random, când navighează prin aplicaţie. 
+
+\subsection{Adăugare de filme/episoade noi}
+
+Această adăugare va avea loc automat deoarece informaţiile colectate de aplicaţie despre filmele/serialele vor fi accesate printr-un API al unui cunoscut site de review-uri.
+
+\section{Idei pentru dezvoltare}
+
+În viitor aş dori să implementez un sistem care să conecteze între ei, utilizatori care au aceleaşi gusturi la filme. Astfel încât utilizatorii să aibă parte de comunitate bazată pe gusturile proprii în ale filmelor.
+
+\end{document}
